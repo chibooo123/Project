@@ -1,0 +1,19 @@
+<div class="main">
+    <div class="main-1">
+        <div class="alert alert-success" [ngClass]="{'hidden': hideSuccess}" role="alert">
+            Login Successfull!
+          </div>
+        <div class="alert alert-danger" [ngClass]="{'visible': showAlert, 'hidden': hideAlert}" role="alert">
+            Login Unsuccessfull!
+          </div>
+    </div>
+    <div class="main-2">
+       <div class="inner-main-2">
+        <h2>Log In</h2>
+        <input type="text" placeholder="First Name" #myNameValue>
+        <input type="password" placeholder="Password" #myPasswordValue>
+        <button (click)="login(myNameValue.value, myPasswordValue.value)">Login</button>
+        <a routerLink="/">Don't have an account? Sign Up</a>
+       </div>
+    </div>
+</div>

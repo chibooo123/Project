@@ -1,0 +1,81 @@
+<div class="header">
+  <a class="btn btn-danger" routerLink="/login">Log Out</a>
+</div>
+<div class="main">
+    <h2>Worker Dashboard</h2>
+    <p class="week-par">Dec 16 - Dec 22</p>
+    <div class="btn-div">
+        <button class="btn btn-primary week">Previous Week</button>
+        <button class="btn btn-primary week">Next Week</button>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Dec 16 - Sun</th>
+            <th scope="col">Dec 17 - Mon</th>
+            <th scope="col">Dec 18 - Tus</th>
+            <th scope="col">Dec 19 - Wed</th>
+            <th scope="col">Dec 20 - thu</th>
+            <th scope="col">Dec 21 - Fri</th>
+            <th scope="col">Dec 22 - Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Security</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Cook</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Barista</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Waiter</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="date-div">
+         <p class="light">Choose Date</p>
+      <input type="date">
+      </div>
+     <div class="vr"></div>
+      <div class="shift-div">
+        <label>Shift: </label>
+        <div class="inner-shift-div">
+         <button class="btn btn-primary shift-morning" [class.btn-primary]="!isNightShift" [class.btn-outline-primary]="isNightShift" (click)="toggleShift('morning')">Morning</button>
+         <button class="btn btn-outline-primary shift-night" [class.btn-outline-primary]="!isNightShift" [class.btn-primary]="isNightShift" (click)="toggleShift('night')">Night</button>
+        </div>
+       
+      </div>
+      <button class="btn btn-success">Add Schedule</button>
+</div>

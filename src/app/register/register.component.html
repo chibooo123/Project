@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="main-1">
+      <div class="inner-main-1">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="First Name" required #myFirstName>
+        <input type="text" placeholder="Last Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required #myPassword>
+        <input type="password" placeholder="Confirm Password" required #myConfirmPassword>
+        <button type="submit" (click)="checkPasswords(myFirstName.value, myPassword.value, myConfirmPassword.value)">Sign Up</button> 
+        <a routerLink="/login">Already have an account? Log in</a>
+      </div>
+    </div>
+    <div class="main-2">
+        <div class="alert alert-success" [ngClass]="{'hidden': hideSuccess}" role="alert">
+            Registration Successfull!
+          </div>
+        <div class="alert alert-danger" [ngClass]="{'visible': showAlert, 'hidden': hideAlert}" role="alert">
+            Registration Unsuccessfull!
+          </div>
+    </div>
+</div>
+

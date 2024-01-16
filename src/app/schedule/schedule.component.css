@@ -1,0 +1,56 @@
+.header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.448);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main{
+    width: 700px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.week-par{
+    font-size: 24px;
+}
+.btn-div{
+    width: 45%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.week{
+    width: 150px;
+    font-size: 15px;
+}
+.date-div{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shift-div{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shift-morning{
+    width: 150px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.shift-night{
+    width: 150px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
